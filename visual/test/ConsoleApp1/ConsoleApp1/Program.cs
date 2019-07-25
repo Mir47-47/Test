@@ -19,8 +19,8 @@ namespace ConsoleApp1
         static int centuryFromYear(int year)
         {
             int century = 0;
-            century = year / 100 + 1;
+            century = year / 100 + 1; //ㅁㄹㄹㄷㄻㄹㄷㅁㄹㅇㄻ
             return century;
         }
     }
-}
+} 
