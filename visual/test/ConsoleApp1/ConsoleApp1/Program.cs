@@ -19,7 +19,12 @@ namespace ConsoleApp1
         static int centuryFromYear(int year)
         {
             int century = 0;
-            century = year / 100 + 1; //ㅁㄹㄹㄷㄻㄹㄷㅁㄹㅇㄻ
+            int a;
+            a = year % 100;
+            if (a=0)
+            { century = year / 100; }
+            else
+            { century = year / 100 + 1; }
             return century;
         }
     }
