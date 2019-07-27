@@ -11,7 +11,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             int century=0;
-            century = centuryFromYear(123);
+            century = centuryFromYear(200);
              Console.WriteLine(century);           
             Console.ReadKey();
             //오늘은 여기까지? 네 네
@@ -21,7 +21,7 @@ namespace ConsoleApp1
             int century = 0;
             int a;
             a = year % 100;
-            if (a=0)
+            if (a == 0)
             { century = year / 100; }
             else
             { century = year / 100 + 1; }
