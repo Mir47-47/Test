@@ -18,7 +18,18 @@ namespace ConsoleApp1
         {
             bool result = false;
             //검사 로직 구현
-            return result;
+            String checkPalindrome = "aabaa";
+            int count = checkPalindrome.Length;
+            count = count % 2;
+            if (count!=0&&count==0 ) //짝수라면
+            {
+            
+            }
+            else//짝수가 아니면
+            {
+
+            }
+            return result;//result를 반환
         }
     }
 } 
