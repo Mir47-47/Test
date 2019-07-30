@@ -10,16 +10,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            char palindrome;
-            palindrome = checkPalindrome(aabaa);
-             Console.WriteLine(palindrome);           
-            Console.ReadKey();
+            bool result;
+            result = checkPalindrome("aabaa");
+            Console.WriteLine(result);
         }
         static bool checkPalindrome(string inputString)
         {
             bool result = false;
-            //코드 짜야됌
+            //검사 로직 구현
             return result;
         }
     }
 } 
+//char은 문자 하나씩만 받을수 있음 string 사용해도 결과는 같음
