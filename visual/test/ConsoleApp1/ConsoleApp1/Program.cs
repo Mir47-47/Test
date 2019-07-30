@@ -10,22 +10,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int century=0;
-            century = centuryFromYear(200);
-             Console.WriteLine(century);           
+            char Palindrome;
+            Palindrome = checkPalindrome(aabaa);
+             Console.WriteLine(Palindrome);           
             Console.ReadKey();
-            //오늘은 여기까지? 네 네
         }
-        static int centuryFromYear(int year)
+        static bool checkPalindrome(string inputString)
         {
-            int century = 0;
-            int a;
-            a = year % 100;
-            if (a == 0)
-            { century = year / 100; }
-            else
-            { century = year / 100 + 1; }
-            return century;
+            bool checkPalindrome(string inputString);//if문으로 만약 글자수가 짝수면 양쪽에서 순서대로 비교
+            //짝수가 아니면 가운데를 제외한 양쪽에서 순서대로 비교
+            char Palindrome;
+             return Palindrome;
         }
     }
 } 
