@@ -16,7 +16,7 @@ namespace ConsoleApp1
         }
         static bool checkPalindrome(string inputString)
         {
-            bool result = true;
+            bool result = false;
             //검사 로직 구현
             String checkPalindrome = "aabaa";
             int count = checkPalindrome.Length;
@@ -32,8 +32,7 @@ namespace ConsoleApp1
             char s3 = checkPalindrome[2];
             char s4 = checkPalindrome[3];
             char s5 = checkPalindrome[4];
-            Console.WriteLine(s1);
-            Console.WriteLine(s3);
+            //char s6 = checkPalindrome[5];
             count1 = count % 2;
             if (count!=0&&count1==0 ) //짝수라면
             {
@@ -41,24 +40,45 @@ namespace ConsoleApp1
                 {
                     if (s2 == s4)
                     {
-
+                        result = true;
                     }
 
 
                     else
                     {
-
+                        result = false;
                     }
                 }
                 else
                 {
-
+                   result = false;
                 }
                 /*Console.WriteLine("짝수다");*/
             }
             else//짝수가 아니면
             {
+                /*if (s1 == s6)
+                {
+                    if (s2 == s5)
+                    {
+                        if(s3==s4)
+                        {
 
+                        }
+                        else
+                        {
+                            result = false;
+                        }
+                    }
+                    else
+                    {
+                        result = false;
+                    }
+                }
+                else
+                {
+                    result = false;
+                }
                 /*Console.WriteLine("홀수다");*/
             }
             return result;//result를 반환
