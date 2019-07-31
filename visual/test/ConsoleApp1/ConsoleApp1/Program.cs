@@ -36,27 +36,6 @@ namespace ConsoleApp1
             count1 = count % 2;
             if (count!=0&&count1==0 ) //짝수라면
             {
-                if (s1 == s5)
-                {
-                    if (s2 == s4)
-                    {
-                        result = true;
-                    }
-
-
-                    else
-                    {
-                        result = false;
-                    }
-                }
-                else
-                {
-                   result = false;
-                }
-                /*Console.WriteLine("짝수다");*/
-            }
-            else//짝수가 아니면
-            {
                 /*if (s1 == s6)
                 {
                     if (s2 == s5)
@@ -70,6 +49,28 @@ namespace ConsoleApp1
                             result = false;
                         }
                     }
+                    else
+                    {
+                        result = false;
+                    }
+                }
+                else
+                {
+                    result = false;
+                */
+            }
+            /*Console.WriteLine("짝수다");*/
+        
+            else//짝수가 아니면
+            {
+                if (s1 == s5)
+                {
+                    if (s2 == s4)
+                    {
+                        result = true;
+                    }
+
+
                     else
                     {
                         result = false;
